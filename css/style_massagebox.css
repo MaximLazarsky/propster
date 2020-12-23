@@ -82,6 +82,13 @@ main {
   padding: 19px 45px;
   font-size: 14px;
   columns: #333333;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+
+.tableItems:hover {
+  transform: scale(1.03);
+  transition-duration: 0.3s;
 }
 
 .tableItems p {
@@ -101,13 +108,22 @@ main {
   background: #f8f8f8;
 }
 
-.flexOverviewContent .blueBackGround {
+.blueBackGround {
   background: #4c95ea;
   color: #ffffff;
   border-radius: 5px;
-  width: 137px;
-  margin-left: 50px;
-  margin-right: 50px;
+}
+
+.greenBackGround {
+  background: #5BC687;
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+.redBackGround {
+  background: #ED6474;
+  color: #ffffff;
+  border-radius: 5px;
 }
 
 .inputTitle {
@@ -305,6 +321,7 @@ footer {
   #footMargin {
     margin-left: 30px;
   }
+  
 }
 
 @media screen and (max-width: 1024px) {
@@ -320,6 +337,15 @@ footer {
     position: static;
     margin-top: 30px;
   }
+  .tableFontSize16 {
+    font-size: 12px;
+  }
+  .tableItems {
+    font-size: 12px;
+  }
+  .tableItems span {
+    font-size: 10px;
+  }
 }
 
 @media screen and (max-width: 845px) {
@@ -329,6 +355,9 @@ footer {
   .pageNav {
     font-size: 14px;
     width: 80%;
+  }
+  .overview {
+    width: 100%;
   }
 }
 
@@ -340,6 +369,9 @@ footer {
   .pageNav {
     font-size: 12px;
     width: 100%;
+  }
+  .date {
+    display: none;
   }
 }
 
