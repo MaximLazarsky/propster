@@ -1,0 +1,298 @@
+.body {
+  margin-top: 134px;
+  display: flex;
+  font-family: "Montserrat";
+  background-color: #f8f8f8;
+}
+.content {
+  padding: 70px;
+  padding-top: 55px;
+  padding-bottom: 50px;
+  width: calc(100% - 140px);
+  position: relative;
+}
+
+.pageNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 600px;
+  border-bottom: 1px solid gray;
+}
+
+.pageNav a {
+  text-decoration: none;
+  color: #585859;
+  border-bottom: 4px solid transparent;
+  padding-bottom: 5px;
+  font-weight: 500;
+  font-size: 18px;
+  transition-duration: 0.5s;
+  text-transform: uppercase;
+}
+.pageNav a:hover {
+  color: #ff605b;
+  border-bottom: 4px solid #ff605b;
+}
+.pageNav a.activeLink {
+  color: #e53934;
+  border-bottom: 8px solid #e53934;
+}
+
+main {
+  width: 80%;
+  margin-top: 45px;
+  background: #ffffff;
+  box-shadow: 0px 0px 16px rgba(61, 61, 61, 0.2);
+  padding: 45px;
+  padding-bottom: 150px;
+  position: relative;
+}
+
+.overview {
+  padding-bottom: 0;
+}
+
+.flexOverviewContent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inputTitle {
+  font-size: 14px;
+  color: #333333;
+  font-weight: 500;
+}
+
+input {
+  width: 97%;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  outline: none;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 8px 10px;
+}
+
+input:focus {
+  border: 1px solid rgba(207, 78, 67, 0.5);
+}
+
+textarea {
+  width: 97%;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  outline: none;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 8px 10px;
+  resize: none;
+  height: 350px;
+}
+
+textarea:focus {
+  border: 1px solid rgba(207, 78, 67, 0.5);
+}
+
+button {
+  position: absolute;
+  background: #d4483e;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 21px 31px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  top: 800px;
+  right: 45px;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+
+button:hover {
+  transition-duration: 0.3s;
+  background: #ff605b;
+}
+
+.dragDrop {
+  background: #fbfbfb;
+  border: 1px dashed #c4c4c4;
+  padding-top: 33px;
+  padding-bottom: 29px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 5px;
+}
+
+.dragDropIcon {
+  font-size: 48px;
+  color: #cf4e43;
+}
+
+.dragDrop p {
+  font-size: 14px;
+  color: #999999;
+}
+
+.dragDrop p a {
+  color: #333333;
+  font-weight: 700;
+  text-decoration-color: #333333;
+}
+
+.uploadFiles {
+  margin: 0 45px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #dddddd;
+}
+
+.uploadFiles:last-child {
+  border-bottom: none;
+  padding-bottom: 30px;
+}
+
+.uploadFilesLeft {
+  display: flex;
+  align-items: center;
+  color: #333333;
+  font-size: 14px;
+}
+
+.clipIcon {
+  margin-right: 10px;
+  transform: rotate(-45deg);
+}
+
+.uploadFilesLeftSize {
+  margin-left: 20px;
+  color: #999999;
+  font-size: 12px;
+}
+
+.uploadFilesRight {
+  display: flex;
+  align-items: center;
+  width: 40%;
+  max-width: 230px;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #333333;
+}
+
+.uploadFilesRight i {
+  color: #dddddd;
+  font-size: 20px;
+}
+
+footer {
+  width: 100%;
+  height: max-content;
+  margin-top: 130px;
+  padding-bottom: 48px;
+}
+.footBody {
+  border-top: 1px solid rgba(128, 128, 128, 0.6);
+  width: 100%;
+  height: max-content;
+  display: flex;
+  justify-content: space-between;
+}
+.footBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.footBlock img {
+  width: 85px;
+}
+.footSide {
+  display: flex;
+}
+.footBlock h5 {
+  font-size: 20px;
+  color: #333333;
+  margin-block-end: 15px;
+}
+.footBlock span {
+  font-size: 13px;
+  font-weight: 500;
+}
+#footMargin {
+  margin-left: 100px;
+}
+.phone {
+  text-decoration: none;
+  color: #e5312c;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.phone:hover {
+  text-decoration: underline;
+}
+.footBlock h6 {
+  font-size: 11px;
+}
+.email {
+  font-size: 13px;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  margin-top: 3px;
+}
+.email:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1280px) {
+  #footMargin {
+    margin-left: 30px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .footSide {
+    display: flex;
+    flex-direction: column;
+  }
+  #footMargin {
+    margin: 0;
+  }
+  .askQuestion button {
+    display: block;
+    position: static;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 845px) {
+  .footBody {
+    flex-direction: column;
+  }
+  .pageNav {
+    font-size: 14px;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .content {
+    padding: 30px;
+    width: calc(100% - 60px);
+  }
+  .pageNav {
+    font-size: 12px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  footer {
+    margin-top: 50px;
+  }
+}

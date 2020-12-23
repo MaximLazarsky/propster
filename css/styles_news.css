@@ -1,0 +1,266 @@
+.body {
+    margin-top: 134px;
+    display: flex;
+    font-family: "Montserrat";
+    background-color: #f8f8f8;
+  }
+  .content {
+    padding: 70px;
+    padding-top: 55px;
+    padding-bottom: 0;
+    width: calc(100% - 140px);
+    position: relative;
+  }
+
+
+.returnToNews {
+    text-decoration: none;
+    color: #333333;
+    font-size: 15px;
+}
+  
+.returnToNews i {
+    margin-right: 10px;
+}
+
+.newsDetailsContent {
+    box-shadow: 0 0 15px -7px grey;
+    background-color: white;
+    width: 80%;
+    margin-top: 30px;
+}
+
+.newsDetailsContentImage {
+    width: 100%;
+}
+
+.newsDetailsContent .postInfo {
+    padding-top: 174px;
+    padding-bottom: 40px;
+    color: #B3B3B3;
+    font-size: 14px;
+}
+
+.newsDetailsContent .postInfo span {
+    color: #E1423C;
+}
+
+.smallInfo{
+    display: flex;
+    box-shadow: 0 0 15px -7px grey;
+    width: 80%;
+    transition-duration: 0.8s;
+    background-color: white;
+    margin-bottom: 40px;
+    min-height: 313px;
+    position: relative;
+}
+.newIcon {
+    border-radius: 24px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #ffffff;
+    padding: 10px 25px;
+    position: absolute;
+    background: #E1423C;
+    top: 32px;
+    left: -18px;
+}
+.smallInfo:hover{
+    transform: scale(1.02);
+}
+.smallInfo a{
+    display: flex;
+    box-shadow: 0 0 15px -7px grey;
+    width: 100%;
+    text-decoration: none;
+}
+.smallInfo h2{
+    color: #333333;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 137%;
+}
+
+#smallInfoMargin{
+    margin-right: 50px;
+}
+.smallInfoText{
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-right: 30px;
+    width: 68%;
+}
+#smallInfoMargin h2{
+    margin-block-end: 0;
+    margin-block-start: 0;
+}
+.smallInfoText p{
+    color: #333333;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.smallInfoText .date {
+    color: #B3B3B3;
+    font-size: 14px;
+}
+#smallInfoFlex a{
+    display: flex;
+    align-items: center;
+    padding-right: 30px;
+    justify-content: space-between;
+    text-decoration: none;
+}
+#smallInfoTextRight{
+    padding-top: 0;
+    width: 60%;
+}
+#smallInfoTextRight h2{
+    margin-block-end: 0;
+    margin-block-start: 0;
+}
+
+.pagination {
+    margin: 127px 0 208px -40px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.pagination:hover {
+    color: #E1423C;
+}
+
+.pagination .active {
+    color: #E1423C;
+    border-radius: 50%;
+    border: 1px solid #E1423C;
+    padding: 5px 10px;
+}
+
+.pagination span {
+    margin-right: 20px;
+    font-size: 14px;
+}
+  
+  footer{
+    width: 100%;
+    height: max-content;
+    margin-top: 130px;
+    padding-bottom: 48px;
+  }
+  .footBody{
+    border-top: 1px solid rgba(128, 128, 128, .6);
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: space-between;
+  }
+  .footBlock{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footBlock img{
+    width: 85px;
+  }
+  .footSide{
+    display: flex;
+  }
+  .footBlock h5{
+    font-size: 20px;
+    color: #333333;
+    margin-block-end: 15px;
+  }
+  .footBlock span{
+    font-size: 13px;
+    font-weight: 500;
+  }
+  #footMargin{
+    margin-left: 100px;
+  }
+  .phone{
+    text-decoration: none;
+    color: #e5312c;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+  .phone:hover{
+    text-decoration: underline;
+  }
+  .footBlock h6{
+    font-size: 11px;
+  }
+  .email{
+    font-size: 13px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    margin-top: 3px;
+  }
+  .email:hover{
+    text-decoration: underline;
+  }
+  
+  @media screen and (max-width: 1280px){
+    #footMargin{
+        margin-left: 30px;
+    }
+
+    .smallInfo{
+        width: 100%;
+    }
+    .smallInfo h2{
+        font-size: 20px;
+    }
+  }
+  
+  @media screen and (max-width: 1024px){
+    .smallInfo a{
+        flex-direction: column;
+    }
+    .footSide{
+        display: flex;
+        flex-direction: column;
+    }
+    #footMargin{
+        margin: 0;
+    }
+    .askQuestion button {
+      display: block;
+      position: static;
+      margin-top: 30px;
+    }
+    
+  }
+  
+  @media screen and (max-width: 845px){
+    .footBody{
+        flex-direction: column;
+    }
+  }
+
+  @media screen and (max-width: 768px){
+    .smallInfo{
+        width: 400px;
+    }
+}
+  
+  @media screen and (max-width: 520px){
+    .content{
+        padding: 30px;
+        width: calc(100% - 60px);
+    }
+  }
+  
+  @media screen and (max-width: 440px){
+    .smallInfo{
+        width: 300px;
+    }
+    footer{
+        margin-top: 50px;
+    }
+  }

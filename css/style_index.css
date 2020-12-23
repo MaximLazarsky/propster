@@ -1,0 +1,462 @@
+.body {
+  margin-top: 134px;
+  display: flex;
+  background-color: #f8f8f8;
+}
+.content {
+  padding: 70px;
+}
+.contentInfoBlock {
+  display: flex;
+  align-items: center;
+  height: 410px;
+  width: 100%;
+}
+.bigInfo {
+  display: flex;
+  height: 100%;
+  width: calc(80% - 308px);
+  overflow-y: hidden;
+  align-items: center;
+  box-shadow: 0 0 15px -7px grey;
+  transition-duration: 0.8s;
+  background-color: white;
+}
+.bigInfo:hover {
+  transform: scale(1.02);
+}
+.bigInfo a {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  overflow-y: hidden;
+  align-items: center;
+  box-shadow: 0 0 15px -7px grey;
+  text-decoration: none;
+}
+.imageBack {
+  width: 40%;
+  height: 100%;
+  background-image: url("../assets/index/build.jpg");
+  background-repeat: no-repeat;
+  background-position-x: -70px;
+}
+.bigTextBlock {
+  height: 600px;
+  position: relative;
+  background-color: white;
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 50%;
+  left: -120px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  width: 60%;
+}
+
+.triangles {
+  position: absolute;
+  transform: translateX(290px) translateY(90px);
+  z-index: 100;
+}
+.bigTextBlock h1 {
+  text-align: right;
+  font-size: 30px;
+  color: #e5312c;
+  transform: translateX(35px);
+  margin-block-end: 0;
+}
+.bigTextBlock h4 {
+  font-size: 20px;
+  color: #333333;
+  text-align: right;
+  width: 50%;
+  transform: translateX(35px);
+  font-weight: 600;
+}
+
+.peopleBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 40px;
+  padding-right: 40px;
+  box-shadow: 0 0 15px -7px grey;
+  height: 410px;
+  justify-content: space-evenly;
+  margin-left: 50px;
+  transition-duration: 0.8s;
+  background-color: white;
+}
+.peopleBlock:hover {
+  transform: scale(1.02);
+}
+.peopleInnerBlock {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #333333;
+}
+.peopleInnerBlock h2 {
+  margin-block-end: 0;
+  margin-block-start: 0;
+}
+.peopleInnerBlock span {
+  font-size: 15px;
+}
+.peopleInnerBlock a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #333333;
+  margin-top: 10px;
+}
+.peopleInnerBlock a:hover {
+  text-decoration: underline;
+}
+
+.contentSmallInfoBlock {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  width: 80%;
+}
+.smallInfo {
+  display: flex;
+  box-shadow: 0 0 15px -7px grey;
+  width: 50%;
+  height: 220px;
+  transition-duration: 0.8s;
+  background-color: white;
+}
+.smallInfo:hover {
+  transform: scale(1.02);
+}
+.smallInfo a {
+  display: flex;
+  box-shadow: 0 0 15px -7px grey;
+  width: 100%;
+  height: 220px;
+  text-decoration: none;
+}
+.smallInfo h2 {
+  color: #333333;
+}
+.smallInfo {
+  width: 100%;
+}
+#smallInfoMargin {
+  margin-right: 50px;
+}
+.smallInfoText {
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+  padding-top: 30px;
+  padding-right: 30px;
+  width: 68%;
+}
+#smallInfoMargin h2 {
+  margin-block-end: 0;
+  margin-block-start: 0;
+}
+.smallInfoText span {
+  color: #e5312c;
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+#smallInfoFlex a {
+  display: flex;
+  align-items: center;
+  padding-right: 30px;
+  justify-content: space-between;
+  text-decoration: none;
+}
+#smallInfoTextRight {
+  padding-top: 0;
+  width: 60%;
+}
+#smallInfoTextRight h2 {
+  margin-block-end: 0;
+  margin-block-start: 0;
+}
+
+/* FOOTER */
+footer {
+  width: 100%;
+  height: max-content;
+  margin-top: 130px;
+}
+.footBody {
+  border-top: 1px solid rgba(128, 128, 128, 0.6);
+  width: 100%;
+  height: max-content;
+  display: flex;
+  justify-content: space-between;
+}
+.footBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.footBlock img {
+  width: 85px;
+}
+.footSide {
+  display: flex;
+}
+.footBlock h5 {
+  font-size: 20px;
+  color: #333333;
+  margin-block-end: 15px;
+}
+.footBlock span {
+  font-size: 13px;
+  font-weight: 500;
+}
+#footMargin {
+  margin-left: 100px;
+}
+.phone {
+  text-decoration: none;
+  color: #e5312c;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.phone:hover {
+  text-decoration: underline;
+}
+.footBlock h6 {
+  font-size: 11px;
+}
+.email {
+  font-size: 13px;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  margin-top: 3px;
+}
+.email:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1440px) {
+  .bigTextBlock {
+    left: -80px;
+  }
+  .bigInfo {
+    width: 73%;
+  }
+  .contentSmallInfoBlock {
+    width: 100%;
+  }
+  .smallInfo {
+    margin-right: 50px;
+  }
+  #smallInfoFlex {
+    margin: 0;
+  }
+  .triangles {
+    transform: translateX(250px) translateY(90px);
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .triangles {
+    transform: translateX(200px) translateY(90px);
+  }
+  .smallInfo h2 {
+    font-size: 20px;
+  }
+  #responsiveSpace {
+    display: none;
+  }
+  .peopleInnerBlock h2 {
+    font-size: 21px;
+  }
+  #footMargin {
+    margin-left: 30px;
+  }
+  .bigTextBlock h4 {
+    font-size: 16px;
+  }
+  .bigTextBlock h1 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .smallInfoText {
+    justify-content: center;
+    padding-top: 0;
+    align-items: center;
+  }
+  .smallInfo span {
+    font-size: 13px;
+  }
+  .smallInfo h2 {
+    font-size: 18px;
+  }
+  .triangles {
+    transform: translateX(150px) translateY(90px);
+  }
+}
+@media screen and (max-width: 1024px) {
+  .triangles {
+    transform: translateX(100px) translateY(90px);
+  }
+  .bigTextBlock h4 {
+    font-size: 14px;
+  }
+  .bigTextBlock h1 {
+    font-size: 20px;
+  }
+  .imageBack {
+    background-position-x: -150px;
+  }
+  .footSide {
+    display: flex;
+    flex-direction: column;
+  }
+  #footMargin {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .contentInfoBlock {
+    width: 100%;
+    height: max-content;
+    flex-direction: column;
+  }
+  .bigInfo {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 50px;
+  }
+  .triangles {
+    transform: translateX(220px) translateY(90px);
+  }
+  .bigTextBlock h4 {
+    font-size: 18px;
+  }
+  .bigTextBlock h1 {
+    font-size: 26px;
+  }
+  .peopleBlock {
+    width: calc(100% - 80px);
+    margin-left: 0;
+  }
+  .contentSmallInfoBlock {
+    display: flex;
+    flex-direction: column;
+  }
+  #smallInfoMargin {
+    margin-right: 0px;
+    margin-bottom: 50px;
+  }
+  .smallInfoText {
+    align-items: flex-start;
+  }
+}
+@media screen and (max-width: 845px) {
+  .triangles {
+    transform: translateX(140px) translateY(90px);
+  }
+  .footBody {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .triangles {
+    transform: translateX(100px) translateY(90px);
+  }
+  .bigTextBlock h4 {
+    font-size: 14px;
+  }
+  .bigTextBlock h1 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 658px) {
+  .bigTextBlock {
+    left: -45px;
+    width: 80%;
+  }
+  .triangles {
+    transform: translateX(170px) translateY(90px);
+    width: 90px;
+  }
+  .imageBack {
+    width: 70%;
+  }
+  .bigTextBlock h4 {
+    font-size: 12px;
+  }
+  .bigTextBlock h1 {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .content {
+    padding: 30px;
+    width: calc(100% - 60px);
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .smallItemImgFirst {
+    width: 200px;
+    height: auto;
+  }
+  .triangles {
+    transform: translateX(105px) translateY(90px);
+  }
+  .bigTextBlock h4 {
+    font-size: 10px;
+  }
+  .bigTextBlock h1 {
+    font-size: 20px;
+  }
+  footer {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .smallItemImgFirst {
+    width: 190px;
+  }
+  .smallInfo {
+    height: 400px;
+  }
+  .smallInfo a {
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 400px;
+  }
+  #smallInfoFlex a {
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 400px;
+  }
+  .bigInfo a {
+    flex-direction: column;
+  }
+  .imageBack {
+    width: 100%;
+    background-position-x: 0;
+    background-position-y: -185px;
+  }
+  .bigTextBlock {
+    width: 100%;
+  }
+  .triangles {
+    transform: translateX(-125px) translateY(167px) rotate(172deg);
+  }
+}

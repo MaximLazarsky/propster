@@ -1,0 +1,413 @@
+.body {
+  margin-top: 134px;
+  display: flex;
+  font-family: "Montserrat";
+  background-color: #f8f8f8;
+}
+.content {
+  padding: 70px;
+  padding-top: 55px;
+  padding-bottom: 0;
+  width: calc(100% - 140px);
+  position: relative;
+}
+
+.pageNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 575px;
+  border-bottom: 1px solid gray;
+}
+
+.pageNav a {
+  text-decoration: none;
+  color: #585859;
+  border-bottom: 4px solid transparent;
+  padding-bottom: 5px;
+  font-weight: 500;
+  font-size: 18px;
+  transition-duration: 0.5s;
+}
+.pageNav a:hover {
+  color: #ff605b;
+  border-bottom: 4px solid #ff605b;
+}
+.pageNav a.activeLink {
+  color: #e53934;
+  border-bottom: 8px solid #e53934;
+}
+
+.docContent {
+  width: 80%;
+  margin-top: 45px;
+  background: #ffffff;
+  box-shadow: 0px 0px 16px rgba(61, 61, 61, 0.2);
+}
+
+.foldersTitle {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #dddddd;
+  color: #333333;
+  align-items: center;
+  padding: 0 45px;
+}
+
+.titleName {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.foldersTitle p {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.clientFolders {
+  display: flex;
+  justify-content: space-between;
+  padding: 45px 45px 55px;
+}
+
+.folder {
+  background: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 52px 23px;
+  cursor: pointer;
+  transition-duration: 0.8s;
+}
+
+.folder:hover {
+  transform: scale(1.03);
+}
+
+.folder i {
+  font-size: 120px;
+  color: #e1423c;
+}
+
+.folder p {
+  color: #333333;
+  font-weight: 600;
+  font-size: 16px;
+  margin: 0;
+}
+
+.folder p:last-child {
+  font-size: 12px;
+  margin-top: 3px;
+}
+
+.files {
+  padding: 45px 45px;
+}
+
+.filesDetails {
+  display: flex;
+  justify-content: space-between;
+  color: #8b8b8b;
+  font-size: 12px;
+  padding: 15px 23px;
+  align-items: center;
+}
+
+.filesDetails p {
+  margin: 0;
+}
+
+.leftPartDetails {
+  width: 25%;
+  max-width: 180px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rightPartDetails {
+  width: 45%;
+  max-width: 430px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.filesItems {
+  font-size: 14px;
+  color: #333333;
+  background: #f3f3f3;
+  padding: 15px 23px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.filesItems i:first-child {
+  font-size: 32px;
+  margin-left: 5px;
+}
+
+.pinkFile {
+  color: #ed6474;
+}
+
+.yellowFile {
+  color: #f2c94c;
+}
+
+.blueFile {
+  color: #4c95ea;
+}
+
+.titleUploadFile {
+  border-bottom: 1px solid #dddddd;
+  color: #333333;
+  padding: 35px 45px;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+.dragDrop {
+  background: #fbfbfb;
+  border: 1px dashed #c4c4c4;
+  width: 90%;
+  padding-top: 139px;
+  padding-bottom: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 45px auto;
+  flex-direction: column;
+}
+
+.dragDropIcon {
+  font-size: 48px;
+  color: #cf4e43;
+  position: relative;
+}
+
+.wordIcon {
+  position: absolute;
+  top: -45px;
+  left: 18.5px;
+  transform: rotate(20deg);
+}
+
+.textIcon {
+  position: absolute;
+  top: -45px;
+  left: -18.5px;
+  transform: rotate(-20deg);
+}
+
+.dragDrop p {
+  font-size: 14px;
+  color: #999999;
+}
+
+.dragDrop p a {
+  color: #333333;
+  font-weight: 700;
+  text-decoration-color: #333333;
+}
+
+.uploadFiles {
+  margin: 0 45px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #dddddd;
+}
+
+.uploadFiles:last-child {
+  border-bottom: none;
+  padding-bottom: 30px;
+}
+
+.uploadFilesLeft {
+  display: flex;
+  align-items: center;
+  color: #333333;
+  font-size: 14px;
+}
+
+.clipIcon {
+  margin-right: 10px;
+  transform: rotate(-45deg);
+}
+
+.uploadFilesLeftSize {
+  margin-left: 20px;
+  color: #999999;
+  font-size: 12px;
+}
+
+.uploadFilesRight {
+  display: flex;
+  align-items: center;
+  width: 40%;
+  max-width: 230px;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #333333;
+}
+
+.uploadFilesRight i {
+  color: #dddddd;
+  font-size: 20px;
+}
+
+footer {
+  width: 100%;
+  height: max-content;
+  margin-top: 130px;
+  padding-bottom: 48px;
+}
+.footBody {
+  border-top: 1px solid rgba(128, 128, 128, 0.6);
+  width: 100%;
+  height: max-content;
+  display: flex;
+  justify-content: space-between;
+}
+.footBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.footBlock img {
+  width: 85px;
+}
+.footSide {
+  display: flex;
+}
+.footBlock h5 {
+  font-size: 20px;
+  color: #333333;
+  margin-block-end: 15px;
+}
+.footBlock span {
+  font-size: 13px;
+  font-weight: 500;
+}
+#footMargin {
+  margin-left: 100px;
+}
+.phone {
+  text-decoration: none;
+  color: #e5312c;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.phone:hover {
+  text-decoration: underline;
+}
+.footBlock h6 {
+  font-size: 11px;
+}
+.email {
+  font-size: 13px;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  margin-top: 3px;
+}
+.email:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1580px) {
+  .folder {
+    padding: 30px 25px 23px;
+  }
+}
+
+@media screen and (max-width: 1380px) {
+  .docContent {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  #footMargin {
+    margin-left: 30px;
+  }
+  .docContent {
+    width: 100%;
+  }
+
+  .folder {
+    padding: 20px 15px 13px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .footSide {
+    display: flex;
+    flex-direction: column;
+  }
+  #footMargin {
+    margin: 0;
+  }
+  .askQuestion button {
+    display: block;
+    position: static;
+    margin-top: 30px;
+  }
+  .clientFolders {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .folder {
+    margin-bottom: 10px;
+    padding: 30px 52px 23px;
+  }
+  .size {
+    display: none;
+  }
+  .created {
+    display: none;
+  }
+  .filesItems .fileName {
+    display: none;
+  }
+  .fileName {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 845px) {
+  .footBody {
+    flex-direction: column;
+  }
+  .pageNav {
+    font-size: 14px;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .content {
+    padding: 30px;
+    width: calc(100% - 60px);
+  }
+  .pageNav {
+    font-size: 12px;
+    width: 100%;
+  }
+  .uploadFilesRight p {
+    display: none;
+  }
+  .uploadFilesRight {
+    width: 30px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  footer {
+    margin-top: 50px;
+  }
+}
