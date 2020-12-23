@@ -50,12 +50,64 @@ main {
 }
 
 .overview {
-  padding-bottom: 0;
+  padding: 0;
 }
 
 .flexOverviewContent {
   display: flex;
   justify-content: space-between;
+  border-bottom: 1px solid #dddddd;
+  box-sizing: border-box;
+}
+
+.flexOverviewContent:last-child {
+  border: none;
+}
+
+.flexOverviewContent p {
+  margin: 0;
+  width: 25%;
+  text-align: center;
+}
+
+.tableTitles {
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #333333;
+  padding: 35px 45px;
+  font-weight: 500;
+}
+
+.tableItems {
+  padding: 19px 45px;
+  font-size: 14px;
+  columns: #333333;
+}
+
+.tableItems p {
+  padding: 6px 0;
+}
+
+.tableFontSize16 {
+  font-size: 16px;
+}
+
+.tableItems span {
+  font-size: 12px;
+  color: #999999;
+}
+
+.tableItems:nth-child(2n + 1) {
+  background: #f8f8f8;
+}
+
+.flexOverviewContent .blueBackGround {
+  background: #4c95ea;
+  color: #ffffff;
+  border-radius: 5px;
+  width: 137px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .inputTitle {
