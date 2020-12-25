@@ -1,0 +1,393 @@
+.body {
+  margin-top: 134px;
+  display: flex;
+  font-family: "Montserrat";
+  background-color: #f8f8f8;
+}
+.content {
+  padding: 70px;
+  padding-top: 55px;
+  padding-bottom: 50px;
+  width: calc(100% - 140px);
+  position: relative;
+}
+
+.userShopingCartContainer {
+  width: 80%;
+}
+
+.userCart {
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0px 0px 16px rgba(61, 61, 61, 0.2);
+  padding-bottom: 20px;
+}
+
+.userCart h3 {
+  padding: 35px 45px;
+  color: #333333;
+  font-weight: 600;
+  font-size: 24px;
+  margin: 0;
+}
+
+.cartItem {
+  display: flex;
+  align-items: center;
+  /* height: 126px; */
+  padding: 10px 45px;
+  border-top: 1px solid #dddddd;
+  justify-content: space-between;
+  color: #333333;
+}
+
+.elementSizeBig {
+  width: 30%;
+}
+
+.elementSizeSmall {
+  width: 20%;
+}
+
+.cartItemTitle {
+  display: flex;
+  height: 61px;
+  align-items: center;
+  font-weight: 500;
+  font-size: 18px;
+  color: #333333;
+  text-transform: uppercase;
+  padding: 0 45px;
+  border-top: 1px solid #dddddd;
+  justify-content: space-between;
+}
+
+.cartItemName {
+  display: flex;
+}
+
+.cartItemNameText {
+  margin-left: 10px;
+}
+
+.name {
+  color: #333333;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.description {
+  font-size: 14px;
+  color: #999999;
+  margin-top: 10px;
+}
+
+.cartItemPrice {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.cartItemQuentety {
+  font-size: 14px;
+}
+
+.quentetyTitle {
+  font-weight: 600;
+  margin: 10px 0 0;
+}
+
+.quentetyDiscription {
+  font-weight: 300;
+  margin: 0;
+}
+
+.cartItemTotalPrice {
+  color: #d4483e;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.shopingCartButtonRemoveConfiguration {
+  margin-top: 35px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.shopingCartButtonRemoveConfiguration button {
+  max-width: 338px;
+  width: 40%;
+  text-transform: uppercase;
+  color: #d4483e;
+  border: 1px solid #d4483e;
+  outline: none;
+  background: inherit;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 21px 0;
+  transition-duration: 0.3s;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.shopingCartButtonRemoveConfiguration button:hover {
+  color: #ff605b;
+  border: 1px solid #ff605b;
+  transition-duration: 0.3s;
+}
+
+.shopingCartButtonRemoveConfiguration p {
+  margin-right: 30px;
+  font-weight: 600;
+  font-size: 18px;
+  color: #333333;
+}
+
+.cartTotals {
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0px 0px 16px rgba(61, 61, 61, 0.2);
+  color: #333333;
+  margin-top: 30px;
+}
+
+.cartTotalsTitle {
+  padding: 35px 45px;
+  font-weight: 600;
+  font-size: 24px;
+  margin: 0;
+}
+
+.cartTotalsItems {
+  padding: 0 45px;
+  border-top: 1px solid #dddddd;
+}
+
+.cartTotalItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  font-size: 22px;
+}
+
+.useTotalPriceCart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  font-size: 22px;
+  padding: 0 45px;
+  border-top: 1px solid #dddddd;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.useTotalPriceCartName {
+  text-transform: uppercase;
+}
+
+.useTotalPriceCartPrice {
+  color: #d4483e;
+}
+
+.checkBoxShopingCart {
+  display: flex;
+  justify-content: start;
+  padding: 35px 45px;
+  align-items: center;
+  border-top: 1px solid #dddddd;
+}
+
+.checkBoxShopingCart p {
+  margin-left: 10px;
+  font-size: 12px;
+}
+
+#checkBox {
+  position: absolute;
+  left: -9999px;
+}
+
+#checkBox + label:before {
+  content: "";
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  border: 1px solid #d4483e;
+  border-radius: 3px;
+}
+#checkBox:checked + label:before {
+  background: url("../assets/message/check.png");
+}
+
+.shopingCartButton {
+  margin-top: 35px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.shopingCartButton button {
+  max-width: 261px;
+  width: 80%;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  background: #d4483e;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 21px 0;
+  transition-duration: 0.3s;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.shopingCartButton button:hover {
+  transition-duration: 0.3s;
+  background: #ff605b;
+}
+
+footer {
+  width: 100%;
+  height: max-content;
+  margin-top: 130px;
+  padding-bottom: 48px;
+}
+.footBody {
+  border-top: 1px solid rgba(128, 128, 128, 0.6);
+  width: 100%;
+  height: max-content;
+  display: flex;
+  justify-content: space-between;
+}
+.footBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.footBlock img {
+  width: 85px;
+}
+.footSide {
+  display: flex;
+}
+.footBlock h5 {
+  font-size: 20px;
+  color: #333333;
+  margin-block-end: 15px;
+}
+.footBlock span {
+  font-size: 13px;
+  font-weight: 500;
+}
+#footMargin {
+  margin-left: 100px;
+}
+.phone {
+  text-decoration: none;
+  color: #e5312c;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.phone:hover {
+  text-decoration: underline;
+}
+.footBlock h6 {
+  font-size: 11px;
+}
+.email {
+  font-size: 13px;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  margin-top: 3px;
+}
+.email:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1280px) {
+  #footMargin {
+    margin-left: 30px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .footSide {
+    display: flex;
+    flex-direction: column;
+  }
+  #footMargin {
+    margin: 0;
+  }
+  .askQuestion button {
+    display: block;
+    position: static;
+    margin-top: 30px;
+  }
+  .userShopingCartContainer {
+    width: 100%;
+  }
+  .elementSizeBig {
+    width: 20%;
+  }
+
+  .cartItemNameText {
+    margin-left: 0;
+  }
+
+  .elementSizeBig img {
+    display: none;
+  }
+
+  .elementSizeSmall {
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 845px) {
+  .footBody {
+    flex-direction: column;
+  }
+  .shopingCartButtonRemoveConfiguration button {
+    font-size: 14px;
+  }
+
+  .name {
+    font-size: 12px;
+  }
+
+  .description {
+    font-size: 10px;
+  }
+
+  .elementSizeSmall {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .content {
+    padding: 30px;
+    width: calc(100% - 60px);
+  }
+  .cartItemPrice {
+    font-size: 10px;
+  }
+
+  .cartItemTotalPrice {
+    font-size: 10px;
+  }
+
+  .cartItemTitle {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  footer {
+    margin-top: 50px;
+  }
+}
