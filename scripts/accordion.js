@@ -59,7 +59,6 @@ accordion.addEventListener("click", (event) => {
   if (event.target.hasAttribute("data-number")) {
     numAccElemetn = +event.target.getAttribute("data-number");
   }
-
   showAccardionItem();
   window.localStorage.setItem("savedNumAccItem", numAccElemetn);
 });
